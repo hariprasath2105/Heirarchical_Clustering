@@ -1,4 +1,4 @@
-# User Behavior Clustering (Hierarchical Clustering)
+# User Behavior Clustering (Hierarchical)
 
 This project demonstrates a simple **Hierarchical Clustering** model to classify website or app users based on their behavior, such as usage time and session data. The model is deployed using **Flask**, and the frontend is styled using **HTML and CSS** with a gradient background.
 
@@ -8,7 +8,6 @@ This project demonstrates a simple **Hierarchical Clustering** model to classify
 - Hierarchical Clustering using `scipy` and `sklearn`
 - Scaled inputs using `StandardScaler`
 - Flask-based web interface for input and cluster prediction
-- Gradient background and clean styled form UI
 - Visual cluster representation
 
 ---
@@ -16,19 +15,19 @@ This project demonstrates a simple **Hierarchical Clustering** model to classify
 ## 📂 Project Structure
 
 ```
-project_folder/
+heirarchical/
 │
 ├── static/
-│   └── style.css          # Styled form with background and UI enhancements
+│   └── style.css          
 │
 ├── templates/
-│   ├── index.html         # Input form page
-│   └── result.html        # Result page with cluster & chart
+│   ├── index.html        
+│   └── result.html        
 │
-├── app.py                 # Flask app to handle routes and predictions
-├── model.py               # Clustering model training and saving (with pickle)
-├── user_behavior.csv      # Dataset used for training the model
-└── model.pkl              # Saved clustering model and scaler
+├── app.py               
+├── model.py              
+├── user_behavior.csv     
+└── model.pkl            
 ```
 
 ---
@@ -69,16 +68,25 @@ python app.py
 
 ---
 
-## 📊 Output Example
-- Cluster Number: `Cluster 1`
-- Visualization: Cluster plot with your data point highlighted
+## Input
+
+<img width="646" height="541" alt="image" src="https://github.com/user-attachments/assets/4f2d6074-04ec-4664-b0b5-d256cc6498d7" />
 
 ---
 
-## 📁 Dataset Source
-A mock dataset (`user_behavior.csv`) was used to simulate user activity.
+## Output 
+
+<img width="646" height="627" alt="image" src="https://github.com/user-attachments/assets/170b34e3-ff40-4ab7-8bbf-9030cf4886fb" />
 
 ---
 
-## 📌 Note
-This model is for demonstration purposes and may require scaling and customization for production use.
+## 🙋‍♂️ Author
+
+**Hari Prasath**  
+[GitHub Profile](https://github.com/hariprasath2105)
+
+---
+
+## 📘 License
+
+This project is open source and free to use.
