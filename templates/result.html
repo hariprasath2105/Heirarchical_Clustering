@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="result-box">
+        <h2>Prediction Result</h2>
+        <p><strong>Cluster:</strong> {{ cluster }}</p>
+        <p><strong>Daily Usage:</strong> {{ usage }} minutes</p>
+        <p><strong>Sessions/Day:</strong> {{ sessions }}</p>
+        <p><strong>Avg Session Length:</strong> {{ avg_session }} minutes</p>
+        <img src="data:image/png;base64,{{ plot_url }}" alt="Cluster Plot" style="width:100%; margin-top:20px;">
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>

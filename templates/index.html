@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Usage Clustering</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="form-box">
+        <h2>User Behavior Clustering</h2>
+        <form method="post" action="/predict">
+            <label>Daily Usage (Minutes)</label>
+            <input type="number" name="usage_minutes" required step="any">
+
+            <label>Sessions Per Day</label>
+            <input type="number" name="sessions_per_day" required step="any">
+
+            <label>Avg. Session Length (Minutes)</label>
+            <input type="number" name="avg_session_length" required step="any">
+
+            <button type="submit">Predict Cluster</button>
+        </form>
+    </div>
+</body>
+</html>
